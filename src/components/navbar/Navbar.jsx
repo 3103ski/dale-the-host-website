@@ -125,7 +125,7 @@ export default function Navbar() {
 			</Menu.Menu>
 
 			<Menu.Menu position='right' className={style.MobileNav}>
-				<Dropdown icon='' simple trigger={<Icon icon='feather:menu' />} className={style.MobilIconContainer}>
+				<Dropdown icon='' trigger={<Icon icon='feather:menu' />} className={style.MobilIconContainer}>
 					<Dropdown.Menu>
 						<Links />
 					</Dropdown.Menu>
