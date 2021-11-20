@@ -1,0 +1,80 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>> MOBILE / GLOBAL
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #222;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h3 {
+	text-align: center;
+}
+
+p {
+	font-size: 2.5vw;
+	letter-spacing: 1px;
+}
+
+h1 {
+	letter-spacing: 5px;
+	font-size: 8vw;
+	font-weight: 100;
+}
+
+h3 {
+	font-size: 5vw;
+}
+
+img {
+	margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+	p {
+		font-size: 1.8vw;
+		line-height: 2.5vw;
+	}
+
+	h3 {
+		font-size: 2.8vw;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	p {
+		font-size: 1.8vw;
+	}
+	h1 {
+		font-size: 75px;
+	}
+
+	h3 {
+		font-size: 2.5vw;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	p {
+		font-size: 1.7rem;
+		line-height: 2.35rem;
+		letter-spacing: 2px;
+	}
+
+	h3 {
+		font-size: 2.5rem;
+		line-height: 2.9rem;
+		font-weight: 500;
+	}
+}
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1920px) {
+}

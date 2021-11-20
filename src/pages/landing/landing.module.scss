@@ -1,0 +1,169 @@
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>> Header Video
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+.HeaderVideoContainer {
+	position: relative;
+
+	.HeaderVideoOverlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(174, 174, 174, 0.275);
+
+		z-index: 99;
+	}
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>> WHAT WE DO SECTION
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.SkylineContainer {
+	padding: 70px 0;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+	background-image: url('/assets/photography/skyline-1.jpg');
+	background-size: cover;
+	background-position: center;
+
+	.SkylineInnerContainer {
+		width: 80vw;
+		max-width: 1000px;
+		border-radius: 5px;
+		background-color: rgba(0, 0, 0, 0.55);
+		padding: 20px 30px;
+
+		h1 {
+			color: white;
+			width: 100%;
+			margin: 30px 0;
+		}
+
+		.ServiceContainer {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			width: 100%;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		height: 90vh;
+	}
+}
+
+.ServiceBox {
+	background-color: white;
+	width: 100%;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-bottom: 1px solid grey;
+
+	svg {
+		font-size: 50px;
+		margin-bottom: 10px;
+		color: grey;
+	}
+
+	p,
+	h3,
+	svg,
+	& {
+		transition: 0.2s;
+		transition-timing-function: ease-out;
+	}
+
+	&:hover {
+		background-color: #111;
+		color: white !important;
+
+		svg {
+			transform: scale(1.1) translateY(-10px);
+		}
+		h3,
+		svg {
+			color: white;
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		width: 45%;
+		margin: 2.5%;
+		height: 280px;
+		border-bottom: none;
+		padding: 20px;
+
+		h3 {
+			font-size: 1.8rem;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		width: 20%;
+		margin: 2%;
+		height: 230px;
+		border-bottom: none;
+
+		h3 {
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+		}
+	}
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>> GENERAL LAYOUT
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.SectionContainer {
+	padding: 30px 0px;
+	min-height: 80vh;
+
+	@media only screen and (min-width: 768px) {
+		padding: 100px 0px;
+	}
+	@media only screen and (max-width: 768px) {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+.ContentRow {
+	margin: 25px 0;
+}
+
+.ContentColumn {
+	padding: 15px 30px !important;
+}
+
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+// >>> PAGE COMPONENTS
+// >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+.SectionTitleContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+
+	.TitleText {
+		text-align: center;
+		margin-bottom: 4px;
+		letter-spacing: 2px;
+		font-size: 2.9rem;
+		color: #222;
+	}
+
+	.TitleUnderline {
+		height: 2px;
+		width: 80px;
+		background-color: #222;
+	}
+}

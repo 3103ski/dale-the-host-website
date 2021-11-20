@@ -1,0 +1,59 @@
+.NavContainer {
+	border-bottom: none !important;
+	box-shadow: none !important;
+
+	&[data-scroll-state='0'] {
+		transition: 0.3s;
+		background-color: #5f6163bf !important;
+	}
+
+	.MenuLogo {
+		margin: 10px 30px !important;
+		// width: 190px !important;
+		transition: 0.35s;
+
+		&[data-logo-at-top='1'] {
+			width: 100px !important;
+		}
+		&[data-logo-at-top='0'] {
+			width: 190px !important;
+		}
+	}
+
+	.RightMenu {
+		display: none !important;
+		.NavLink {
+			height: 100%;
+			font-size: 1.3rem;
+			letter-spacing: 2px;
+			color: white !important;
+		}
+	}
+
+	.MobileNav {
+		.MobilIconContainer {
+			display: flex;
+			align-items: center;
+
+			svg {
+				color: white;
+				font-size: 35px;
+				margin-right: 20px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 768px) {
+		.RightMenu {
+			display: flex !important;
+		}
+
+		.MobileNav {
+			display: none !important;
+		}
+	}
+}
+
+a {
+	border: none !important;
+}
