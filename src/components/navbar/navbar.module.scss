@@ -13,9 +13,11 @@
 		transition: 0.35s;
 
 		&[data-logo-at-top='1'] {
+			opacity: 0;
 			width: 100px !important;
 		}
 		&[data-logo-at-top='0'] {
+			opacity: 1;
 			width: 190px !important;
 		}
 	}
