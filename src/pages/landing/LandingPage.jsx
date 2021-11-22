@@ -114,19 +114,23 @@ LandingPage.SocialFeed = () => (
 		<Grid>
 			<Grid.Row>
 				<Grid.Column>
-					<InstagramEmbed
-						url='https://www.instagram.com/dalethehost/'
-						clientAccessToken='198083335828342|41ef72bb849aa49d6fafa04116eb6c34'
-						maxWidth={320}
-						hideCaption={false}
-						containerTagName='div'
-						protocol=''
-						injectScript
-						onLoading={() => {}}
-						onSuccess={() => {}}
-						onAfterRender={() => {}}
-						onFailure={() => {}}
-					/>
+					<div>
+						<InstagramEmbed
+							url='https://www.instagram.com/p/mixstudiosonline'
+							clientAccessToken='198083335828342|41ef72bb849aa49d6fafa04116eb6c34'
+							maxWidth={320}
+							hideCaption={false}
+							containerTagName='div'
+							protocol=''
+							injectScript
+							onLoading={() => {}}
+							onSuccess={() => {}}
+							onAfterRender={() => {}}
+							onFailure={(err) => {
+								console.log('it all failed :: ', err);
+							}}
+						/>
+					</div>
 				</Grid.Column>
 			</Grid.Row>
 		</Grid>
