@@ -14,7 +14,7 @@ export default function ContactForm() {
 		alert("Message Sent! I'll get back to you as soon as I can.");
 	}
 	return (
-		<form className='ui form' method='post' data-netlify='true' name='contact' action='/form-success'>
+		<form className='ui form' method='post' data-netlify='true' netlify name='contact' action='/form-success'>
 			<input type='hidden' name='form-name' value='contact' />
 			<Form.Input onChange={onChange} value={values.name} name='name' placeholder='Name' />
 			<Form.Input onChange={onChange} value={values.email} name='email' placeholder='Email' />
