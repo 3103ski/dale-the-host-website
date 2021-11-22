@@ -14,7 +14,7 @@ export default function ContactForm() {
 	// 	alert("Message Sent! I'll get back to you as soon as I can.");
 	// }
 	return (
-		<form className='ui form' method='post' data-netlify='true' name='contact'>
+		<form className='ui form' method='post' data-netlify='true' name='contact' action='/'>
 			<input type='hidden' name='form-name' value='contact' />
 			<Form.Input type='text' name='name' placeholder='Name' />
 			<Form.Input type='email' name='email' placeholder='Email' />
