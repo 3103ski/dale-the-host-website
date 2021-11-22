@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Grid, Container, Embed, Image, Divider } from 'semantic-ui-react';
 import { Icon } from '@iconify/react';
+import InstagramEmbed from 'react-instagram-embed';
 
 import { ClientPhoto1, ClientPhoto2 } from '../../assets/';
 import { ContactForm } from '../../components/';
@@ -27,6 +28,7 @@ LandingPage.HeaderVideo = () => (
 			autoplay={true}
 			id='ofddQHqdLiA'
 			active
+			source='youtube'
 			iframe={{
 				allowFullScreen: true,
 				src: 'https://www.youtube.com/embed/ofddQHqdLiA?autoplay=1&;mute=1&;playlist=ofddQHqdLiA&;loop=1&;controls=0&;rel=0',
@@ -109,6 +111,25 @@ LandingPage.ServiceTiles = () => (
 LandingPage.SocialFeed = () => (
 	<Container className={style.SectionContainer} id={'section-4'}>
 		<SectionTitle title='DALE ON INSTA' />
+		<Grid>
+			<Grid.Row>
+				<Grid.Column>
+					<InstagramEmbed
+						url='https://www.instagram.com/dalethehost/'
+						clientAccessToken='198083335828342|41ef72bb849aa49d6fafa04116eb6c34'
+						maxWidth={320}
+						hideCaption={false}
+						containerTagName='div'
+						protocol=''
+						injectScript
+						onLoading={() => {}}
+						onSuccess={() => {}}
+						onAfterRender={() => {}}
+						onFailure={() => {}}
+					/>
+				</Grid.Column>
+			</Grid.Row>
+		</Grid>
 	</Container>
 );
 

@@ -120,7 +120,7 @@ export default function Navbar() {
 				/>
 			</Menu.Item>
 
-			<Menu.Menu position='right' pointing secondary className={style.RightMenu}>
+			<Menu.Menu position='right' className={style.RightMenu}>
 				<Links />
 			</Menu.Menu>
 
