@@ -4,7 +4,7 @@ import useForm from './useForm.js';
 import { Form } from 'semantic-ui-react';
 
 export default function ContactForm() {
-	const { onSubmit, values, onChange, resetFormValues } = useForm(handleOnSubmit, {
+	const { values, onChange } = useForm(handleOnSubmit, {
 		name: '',
 		email: '',
 		message: '',
@@ -16,9 +16,9 @@ export default function ContactForm() {
 	return (
 		<form className='ui form' method='post' data-netlify='true' name='contact' action='/form-success'>
 			<input type='hidden' name='form-name' value='contact' />
-			<Form.Input placeholder='Name' />
-			<Form.Input placeholder='Email' />
-			<Form.TextArea placeholder='Message' />
+			<Form.Input onChange={onChange} value={values.name} name='name' placeholder='Name' />
+			<Form.Input onChange={onChange} value={values.email} name='email' placeholder='Email' />
+			<Form.TextArea onChange={onChange} value={values.message} name='message' placeholder='Message' />
 			<Form.Button type='submit'>Send</Form.Button>
 		</form>
 	);
