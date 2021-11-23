@@ -108,34 +108,33 @@ LandingPage.ServiceTiles = () => (
 	</Container>
 );
 
-LandingPage.SocialFeed = () => (
-	<Container className={style.SectionContainer} id={'section-4'}>
-		<SectionTitle title='DALE ON INSTA' />
-		<Grid>
-			<Grid.Row>
-				<Grid.Column>
-					<div>
-						<InstagramEmbed
-							url='https://www.instagram.com/p/mixstudiosonline'
-							clientAccessToken='198083335828342|41ef72bb849aa49d6fafa04116eb6c34'
-							maxWidth={320}
-							hideCaption={false}
-							containerTagName='div'
-							protocol=''
-							injectScript
-							onLoading={() => {}}
-							onSuccess={() => {}}
-							onAfterRender={() => {}}
-							onFailure={(err) => {
-								console.log('it all failed :: ', err);
-							}}
-						/>
-					</div>
-				</Grid.Column>
-			</Grid.Row>
-		</Grid>
-	</Container>
-);
+LandingPage.SocialFeed = () => {
+	(function (d, s, id) {
+		var js;
+		if (d.getElementById(id)) {
+			return;
+		}
+		js = d.createElement(s);
+		js.id = id;
+		js.src = 'https://embedsocial.com/cdn/ht.js';
+		d.getElementsByTagName('head')[0].appendChild(js);
+	})(document, 'script', 'EmbedSocialHashtagScript');
+
+	return (
+		<Container className={style.SectionContainer} id={'section-4'}>
+			<SectionTitle title='DALE ON INSTA' />
+			<Grid>
+				<Grid.Row>
+					<Grid.Column>
+						<div>
+							<div class='embedsocial-hashtag' data-ref='805d852a710bed1e5124ff38a735033d2c739813'></div>
+						</div>
+					</Grid.Column>
+				</Grid.Row>
+			</Grid>
+		</Container>
+	);
+};
 
 LandingPage.ContactSection = () => (
 	<Container className={style.SectionContainer} id={'section-5'}>
