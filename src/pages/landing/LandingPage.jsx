@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Grid, Container, Embed, Image, Divider } from 'semantic-ui-react';
 import { Icon } from '@iconify/react';
-import InstagramEmbed from 'react-instagram-embed';
 
 import { ClientPhoto1, ClientPhoto2 } from '../../assets/';
 import { ContactForm } from '../../components/';
